@@ -12,7 +12,7 @@ class Manager:
             self.dal.db = db 
             processed = []
             for record in self.dal.fetch_all(collection_name):
-                original_text = record.get('text', '')
+                original_text = record.get('Text', '')
                 rarest_word = self.rare_word_processor.find_rare_word(original_text)
                 sentiment = self.sentiment_processor.get_sentiment(original_text)
                 weapon = self.weapon_processor.find_weapon(original_text)
@@ -21,6 +21,6 @@ class Manager:
                     'original_text': original_text,
                     'rarest_word': rarest_word,
                     'sentiment': sentiment,
-                    'weapons_detected': weapon or ''
+                    'weapons_detected': weapon
                 })
             return processed

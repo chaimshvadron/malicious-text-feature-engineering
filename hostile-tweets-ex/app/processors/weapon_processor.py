@@ -11,5 +11,6 @@ class WeaponProcessor:
     def find_weapon(self, text):
         for weapon in self.weapon_list:
             if weapon in text:
+                print(f"Found weapon: {weapon}")
                 return weapon
         return None

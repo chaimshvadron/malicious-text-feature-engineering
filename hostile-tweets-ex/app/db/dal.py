@@ -1,5 +1,5 @@
 class MongoDAL:
-    def __init__(self, db):
+    def __init__(self, db = None):
         self.db = db
 
     def fetch_all(self, collection_name):
