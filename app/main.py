@@ -1,11 +1,11 @@
 from fastapi import FastAPI
 import os
-from db.connector import MongoDBAtlasConnection
-from db.dal import MongoDAL
-from processors.rare_word_processor import RareWordProcessor
-from processors.sentiment_processor import SentimentProcessor
-from processors.weapon_processor import WeaponProcessor
-from manager import Manager
+from app.db.connector import MongoDBAtlasConnection
+from app.db.dal import MongoDAL
+from app.processors.rare_word_processor import RareWordProcessor
+from app.processors.sentiment_processor import SentimentProcessor
+from app.processors.weapon_processor import WeaponProcessor
+from app.manager import Manager
 
 app = FastAPI()
 
