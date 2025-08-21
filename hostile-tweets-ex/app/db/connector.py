@@ -3,7 +3,7 @@ from pymongo import MongoClient
 from dotenv import find_dotenv, load_dotenv
 
 dotenv_path = find_dotenv()
-load_dotenv(dotenv_path=dotenv_path)
+load_dotenv(dotenv_path)
 
 class MongoDBAtlasConnection:
 	def __init__(self):
