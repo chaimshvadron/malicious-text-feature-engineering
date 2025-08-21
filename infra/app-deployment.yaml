@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: hostile-tweets-app
-        image: chaimshvadron/malicious_text_feature:V6
+        image: chaimshvadron/malicious_text_feature:V7
         imagePullPolicy: Always
         env:
         - name: MONGODB_CONNECTION_STRING
